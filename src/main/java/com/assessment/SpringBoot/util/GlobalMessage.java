@@ -13,6 +13,7 @@ public class GlobalMessage {
         GlobalResponse res = GlobalResponse.builder()
                 .process(process)
                 .message(message)
+                .status(status)
                 .build();
         return ResponseEntity.status(status).body(res);
     }
